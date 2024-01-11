@@ -50,10 +50,6 @@ function onStartClick() {
         console.log(convertMs(ms))
         render(convertMs(ms));
 
-        if (!selectedTime) {
-            clearInterval(intervalId);
-        }
-
     }, delay);
 }
 
