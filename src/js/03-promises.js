@@ -25,6 +25,7 @@ function onCreatePromises(evt) {
 }
 
 function createPromise(position, delay) {
+
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
 
@@ -45,4 +46,3 @@ function onSuccess({ position, delay }) {
 function onError({ position, delay }) {
   Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
 }
-
